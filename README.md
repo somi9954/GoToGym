@@ -19,6 +19,10 @@
 
 
 # 📋 기능 명세서
+# 메인 페이지
+![image](https://github.com/somi9954/GoToGym/assets/137499604/56965103-41af-4844-a1d1-5f19ad82fafb)
+
+
 ## 1. 관리자 페이지
 ### 기본 설정
 
@@ -60,6 +64,7 @@
 - 게시판 목록
 - 게시판 등록/수정
 - 게시글 관리
+ ![image](https://github.com/somi9954/GoToGym/assets/137499604/4e2482b4-7ab9-41c0-b0fa-a1b735f8e363)
 ![image](https://github.com/daeyounggg/GoToGym/assets/137499604/297a9c70-e791-4ed2-a031-e75f7cb4ce2c)
 ![image](https://github.com/daeyounggg/GoToGym/assets/137499604/3b42801f-efb1-4065-882f-9337f72e3e0e)
 
