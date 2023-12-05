@@ -1,8 +1,8 @@
 # 📚 프로젝트 소개
 ## 1. 개요
 - 프로젝트명 : GoToGym
-- 개발 기간 : 2023.11.15 ~ 2023.11.28
-- 개발 인원 : 4명
+- 개발 기간 : 2023.11.15 ~ 2023.12.07
+- 개발 인원 : 2명
 
 ## 2. ⚙️기술 스택 
 ### ✔️Frond-end
@@ -12,10 +12,10 @@
  <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"><img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=green"><img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=Spring Boot&logoColor=yellow"><img src="https://img.shields.io/badge/oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white"> 
 
 ## 🦹‍ Team
-|김대영|목진혁|조소미|
-|:---:|:---:|:---:|
-|[daeyounggg](https://github.com/daeyounggg)|[MJinHyuk](https://github.com/MJinHyuk)|[somi9954](https://github.com/somi9954)|
-|![](https://avatars.githubusercontent.com/u/137499608?v=4)|![](https://avatars.githubusercontent.com/u/147026593?v=4)|![](https://avatars.githubusercontent.com/u/137499604?v=4)|
+|목진혁|조소미|
+|:---:|:---:|
+|[MJinHyuk](https://github.com/MJinHyuk)|[somi9954](https://github.com/somi9954)|
+|![](https://avatars.githubusercontent.com/u/147026593?v=4)|![](https://avatars.githubusercontent.com/u/137499604?v=4)|
 
 
 # 📋 기능 명세서
