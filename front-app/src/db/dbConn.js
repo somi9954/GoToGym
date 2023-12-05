@@ -30,10 +30,12 @@ oracledb.getConnection(
     const seqQuery = 'SELECT member_seq.NEXTVAL FROM DUAL';
     const insertQuery = `
         INSERT INTO member (seq, email, password, name, mobile, type, created_at)
-        VALUES (:seq, :email, :password, :name, :mobile, :type, SYSTIMESTAMP)
+        VALUES (:seq, :email, :password, :name, :mobile, :type, TO_TIMESTAMP(:created_at, 'YYYY-MM-DD HH24:MI:SS'))
     `;
 
-    const userEmail = 'user02@test.org'; // 중복 체크 및 삽입에 사용할 이메일 변수
+    const userEmail = 'user99@test.org'; // 중복 체크 및 삽입에 사용할 이메일 변수
+    const currentDate = new Date();
+    const formattedDate = currentDate.toISOString().slice(0, 18).replace("T", " "); // 소수 초 포함
 
     conn.execute(seqQuery, [], function (errSeq, resultSeq) {
       if (errSeq) {
@@ -76,9 +78,9 @@ oracledb.getConnection(
                 nextVal,
                 userEmail,
                 hashedPassword,
-                '사용자02',
+                '사용자99',
                 '01044445555',
-                'ADMIN',
+                'USER',
               ],
             ];
 
@@ -86,7 +88,7 @@ oracledb.getConnection(
 
             conn.executeMany(
               insertQuery,
-              members,
+              [[nextVal, userEmail, hashedPassword, '사용자99', '01044445555', 'ADMIN', formattedDate]],
               options,
               function (errInsert, resultInsert) {
                 if (errInsert) {

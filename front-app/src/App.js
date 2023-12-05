@@ -6,15 +6,15 @@ import AdminLayout from './layouts/admin/CommonLayout';
 import NotFound from './pages/commons/NotFound';
 import MemberListContainer from './containers/member/MemberListContainer';
 
-
-
 /* 클라이언트 페이지 S */
 import Main from './pages/front/Main';
 import Login from './pages/front/member/Login';
 import Join from './pages/front/member/Join';
 import Logout from './pages/front/member/Logout';
 import Diary from './pages/front/member/Diary';
-import BoardForm from "./components/board/BoardForm";
+import BoardForm from './components/board/BoardForm';
+import CommunityList from './components/Community/CommunityList';
+
 /* 클라이언트 페이지 E */
 
 /* 관리자 페이지 S */
@@ -24,12 +24,7 @@ import AdminBoard from './pages/admin/board/Main';
 
 import UserContext from './modules/user';
 
-
-
-
-
 const App = () => {
-
   /* 로그인 유지 처리 S */
   const {
     state: { isLogin },
@@ -52,9 +47,7 @@ const App = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-
   return (
-
     <Routes>
       <Route path="/" element={<FrontLayout />}>
         <Route index element={<Main />} />
@@ -64,18 +57,17 @@ const App = () => {
         <Route path="/diary" element={<Diary />} />
       </Route>
 
-
       <Route path="/admin" element={<AdminLayout />}>
         <Route index element={<AdminMain />} />
         <Route path="member" element={<MemberListContainer />} />
-        <Route path="/admin/board" element={<AdminBoard/>} />
-        <Route path="/admin/board/register" element={<BoardForm/>} />
+        <Route path="/admin/board" element={<AdminBoard />} />
+        <Route path="/admin/board/register" element={<BoardForm />} />
       </Route>
 
+      <Route path="/Communtiy" element={<CommunityList />} />
 
       <Route path="*" element={<NotFound />} />
     </Routes>
-
   );
 };
 

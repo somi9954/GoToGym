@@ -1,5 +1,5 @@
 const Footer = () => {
-  return <h1>푸터</h1>;
+  return <h5 align="center">ⓒ 2023 All Rights Reserved. </h5>;
 };
 
 export default Footer;

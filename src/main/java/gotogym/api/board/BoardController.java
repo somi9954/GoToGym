@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@Controller
+@RestController
 @RequestMapping("/api/v1/board")
 @RequiredArgsConstructor
 public class BoardController {
@@ -47,6 +47,7 @@ public class BoardController {
      * @return
      */
     @GetMapping("/list/{bId}")
+    @ResponseBody
     public String list(@PathVariable String bId, Model model) {
         commonProcess(bId, "list", model);
 
