@@ -16,11 +16,14 @@ const MemberListContainer = () => {
       })
       .catch((error) => {
         setError(error.message);
+        alert(error.message); // 에러 메시지를 alert으로 표시
+        history.goBack(); // 뒤로가기
       });
-  }, []);
+  }, [history]);
 
   if (error) {
-    return <div>Error: {error}</div>;
+
+    return null;
   }
 
   return <MemberList members={members} />;
